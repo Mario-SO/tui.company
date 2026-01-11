@@ -122,6 +122,17 @@ export default function Landing() {
 						</motion.span>
 					</motion.div>
 				</motion.section>
+				<motion.footer
+					className="mt-[clamp(2rem,6vw,4rem)] flex items-center gap-4 text-[0.7rem] uppercase tracking-[0.3em] text-[#6c7076]"
+					variants={fadeUp}
+				>
+					<a
+						href="/terms"
+						className="transition-colors duration-200 hover:text-[#1b4dff]"
+					>
+						Terms &amp; Services
+					</a>
+				</motion.footer>
 			</motion.div>
 		</motion.main>
 	);
