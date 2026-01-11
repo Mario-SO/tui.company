@@ -24,7 +24,7 @@ const fadeUp = {
 export default function Landing() {
 	return (
 		<motion.main
-			className="min-h-screen flex justify-center p-[clamp(2rem,6vw,5rem)] bg-[linear-gradient(rgba(27,77,255,0.12)_1px,transparent_1px),linear-gradient(90deg,rgba(27,77,255,0.12)_1px,transparent_1px)] bg-[size:48px_48px]"
+			className="min-h-screen flex justify-center p-[clamp(2rem,6vw,5rem)] bg-[linear-gradient(rgba(27,77,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(27,77,255,0.08)_1px,transparent_1px)] bg-[size:48px_48px]"
 			initial="hidden"
 			animate="show"
 		>
