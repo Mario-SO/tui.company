@@ -1,5 +1,11 @@
 ---
 import "../styles/global.css";
+
+const {
+	title = "tui.company",
+	description = "Making highly efficient software for terminal lovers.",
+} = Astro.props;
+const ogImage = "/open-graph/home.png";
 ---
 
 <!doctype html>
@@ -8,8 +14,18 @@ import "../styles/global.css";
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={ogImage} />
+		<meta property="og:image:alt" content="TUI COMPANY" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImage} />
 		<meta name="generator" content={Astro.generator} />
-		<title>tui.company</title>
+		<title>{title}</title>
 	</head>
 	<body class="min-h-screen h-full w-full">
 		<slot />
