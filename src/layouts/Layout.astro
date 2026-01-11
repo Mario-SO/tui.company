@@ -5,7 +5,9 @@ const {
 	title = "tui.company",
 	description = "Making highly efficient software for terminal lovers.",
 } = Astro.props;
-const ogImage = "/open-graph/home.png";
+const ogImagePath = "/open-graph/home.png";
+const siteUrl = Astro.site ?? new URL("https://tui.company");
+const ogImage = new URL(ogImagePath, siteUrl).toString();
 ---
 
 <!doctype html>
@@ -15,10 +17,14 @@ const ogImage = "/open-graph/home.png";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="description" content={description} />
+		<meta property="og:url" content={siteUrl.toString()} />
+		<meta property="og:site_name" content="tui.company" />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content={ogImage} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
 		<meta property="og:image:alt" content="TUI COMPANY" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={title} />
