@@ -2,8 +2,8 @@ import { OGImageRoute } from "astro-og-canvas";
 
 const pages = {
 	home: {
-		title: "TUI",
-		description: "COMPANY",
+		title: "TUI\nCOMPANY",
+		description: "Making highly efficient software for terminal lovers.",
 	},
 };
 
@@ -22,15 +22,15 @@ export const { getStaticPaths, GET } = await OGImageRoute({
 		font: {
 			title: {
 				color: [255, 255, 255],
-				size: 160,
-				lineHeight: 0.9,
+				size: 150,
+				lineHeight: 0.95,
 				weight: "Normal",
 				families: ["DepartureMono"],
 			},
 			description: {
-				color: [213, 225, 255],
-				size: 140,
-				lineHeight: 0.9,
+				color: [255, 255, 255],
+				size: 42,
+				lineHeight: 1.3,
 				weight: "Normal",
 				families: ["DepartureMono"],
 			},
