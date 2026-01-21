@@ -97,6 +97,35 @@ export default function Landing() {
 									</span>
 								</a>
 							</motion.li>
+							<motion.li
+								className="px-[0.9rem] py-2 border border-[rgba(27,77,255,0.2)] uppercase tracking-[0.15em]"
+								variants={fadeUp}
+							>
+								<a
+									className="group inline-flex items-center gap-3 no-underline"
+									href="https://github.com/Mario-SO/hermes"
+									target="_blank"
+									rel="noreferrer"
+								>
+									hermes
+									<span
+										className="inline-flex h-4 w-4 text-[#1b4dff] transition-transform duration-200 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:translate-x-[2px] group-hover:-translate-y-[2px]"
+										aria-hidden="true"
+									>
+										<svg
+											className="h-full w-full"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											strokeWidth="1.5"
+										>
+											<title>External link</title>
+											<path d="M7 17L17 7" />
+											<path d="M9 7h8v8" />
+										</svg>
+									</span>
+								</a>
+							</motion.li>
 						</motion.ul>
 						<motion.p
 							className="mt-2 text-[0.75rem] tracking-[0.25em] uppercase text-[#6c7076]"
@@ -104,14 +133,6 @@ export default function Landing() {
 						>
 							Currently in development
 						</motion.p>
-						<motion.span
-							className="inline-flex items-center w-full px-[0.9rem] py-2 border border-[rgba(27,77,255,0.2)] border-dashed uppercase tracking-[0.15em] text-[#6c7076] line-through decoration-[#1b4dff] decoration-[1px] transition-colors duration-200 ease-[cubic-bezier(0.4,0,0.2,1)]"
-							variants={fadeUp}
-							whileHover={{ y: -2, borderColor: "rgba(27, 77, 255, 0.5)" }}
-							transition={{ duration: 0.2 }}
-						>
-							hermes
-						</motion.span>
 						<motion.span
 							className="inline-flex items-center w-full px-[0.9rem] py-2 border border-[rgba(27,77,255,0.2)] border-dashed uppercase tracking-[0.15em] text-[#6c7076] line-through decoration-[#1b4dff] decoration-[1px] transition-colors duration-200 ease-[cubic-bezier(0.4,0,0.2,1)]"
 							variants={fadeUp}
